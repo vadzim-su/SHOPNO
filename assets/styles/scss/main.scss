@@ -1,0 +1,618 @@
+$maxWidth: 1140px;
+$horizontalAlign: 0 auto;
+$userAnimation: all 0.2s linear;
+$upperCase: uppercase;
+
+.header {
+  background-color: #eff0f2;
+  padding: 65px 0 193px;
+
+  &__wrapper {
+    max-width: $maxWidth;
+    margin: $horizontalAlign;
+    position: relative;
+  }
+
+  &__top {
+    margin-bottom: 194px;
+  }
+
+  &__logo {
+    border: 5.54px solid #170f1c;
+    padding: 8px 7px;
+    cursor: pointer;
+    display: block;
+  }
+
+  &__title {
+    font-size: 45px;
+    letter-spacing: 1.7px;
+    line-height: 1.27;
+    color: #505050;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    text-transform: $upperCase;
+    margin-bottom: 139px;
+    filter: drop-shadow(3.517px 8.285px 5px rgba(0, 0, 0, 0.24));
+  }
+
+  &__blue {
+    background-color: #76f4ea;
+
+    &_first {
+      padding: 0 10px;
+    }
+
+    &_second {
+      padding: 0 10px 0 10px;
+      margin-right: 5px;
+    }
+  }
+
+  &__first {
+    display: flex;
+    justify-content: center;
+    margin-left: 17px;
+  }
+
+  &__second {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  &__button {
+    border: 2px solid #000000;
+    display: block;
+    margin: $horizontalAlign;
+    transition: $userAnimation;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.24);
+      transition: $userAnimation;
+    }
+  }
+
+  &__contact {
+    display: block;
+    padding: 10px 39px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-transform: $upperCase;
+    transition: $userAnimation;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 53px;
+    bottom: -119px;
+  }
+
+  &__glass {
+    display: block;
+    text-align: end;
+  }
+}
+
+.about {
+  background-color: #f8fafa;
+  padding: 130px 0 163px;
+
+  &__wrapper {
+    max-width: $maxWidth;
+    margin: $horizontalAlign;
+  }
+
+  &__title {
+    font-size: 38px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 11px;
+    text-transform: $upperCase;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Merriweather", serif;
+    text-align: center;
+    text-transform: $upperCase;
+    margin-bottom: 140px;
+  }
+
+  &__rows {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 43px 0 80px;
+  }
+
+  &__row {
+    &:first-of-type {
+      filter: drop-shadow(0 0 15px rgba(20, 20, 21, 0.13));
+      background-color: #e4e5e8;
+    }
+
+    &:last-of-type {
+      max-width: 470px;
+    }
+  }
+
+  &__caption {
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Merriweather", serif;
+    text-transform: $upperCase;
+    margin-bottom: 18px;
+
+    &:last-of-type {
+      font-size: 17px;
+      letter-spacing: 1px;
+      margin-bottom: 13px;
+    }
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Raleway";
+    text-align: justify;
+
+    &:first-of-type {
+      margin-bottom: 28px;
+    }
+
+    &:nth-of-type(2) {
+      margin-bottom: 29px;
+    }
+  }
+}
+
+.works {
+  padding: 130px 0 113px;
+
+  &__wrapper {
+    max-width: $maxWidth;
+    margin: $horizontalAlign;
+  }
+
+  &__title {
+    font-size: 38px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+    text-transform: $upperCase;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Merriweather", serif;
+    text-align: center;
+    text-transform: $upperCase;
+    margin-bottom: 115px;
+  }
+
+  &__images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__image {
+    margin-bottom: 13px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &__slider {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__content {
+    position: relative;
+    height: 100vh;
+    display: flex;
+  }
+
+  &__slide {
+    width: 90vh;
+    margin: auto;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &__cross {
+    position: absolute;
+    color: #fff;
+    opacity: 0.6;
+    z-index: 5;
+    right: 50px;
+    top: 50px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: $userAnimation;
+
+    &:hover {
+      transform: rotate(45deg);
+      transition: $userAnimation;
+    }
+  }
+
+  &__close {
+    position: relative;
+  }
+
+  &__arrow {
+    font-size: 10em;
+    color: #fff;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__button {
+    background: none;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.team {
+  padding: 100px 0 190px;
+  background-color: #f9fbfb;
+
+  &__wrapper {
+    max-width: $maxWidth;
+    margin: $horizontalAlign;
+  }
+
+  &__title {
+    font-size: 38px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 5px;
+    text-transform: $upperCase;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Merriweather", serif;
+    text-align: center;
+    text-transform: $upperCase;
+    margin-bottom: 115px;
+  }
+
+  &__persons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__person {
+    margin-bottom: 13px;
+    display: flex;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 375px;
+    height: 440px;
+
+    &:hover .team__info {
+      opacity: 1;
+      transition: $userAnimation;
+    }
+
+    &_one {
+      background: url("./../../img/team_1.png");
+    }
+    &_two {
+      background: url("./../../img/team_2.png");
+    }
+    &_three {
+      background: url("./../../img/team_3.png");
+    }
+    &_four {
+      background: url("./../../img/team_4.png");
+    }
+    &_five {
+      background: url("./../../img/team_5.png");
+    }
+    &_six {
+      background: url("./../../img/team_6.png");
+    }
+  }
+
+  &__info {
+    filter: drop-shadow(2.735px 6.444px 8px rgba(20, 20, 21, 0.18));
+    background-color: #6df6eb;
+    margin: auto 20px;
+    padding: 35px 55px 30px 40px;
+    position: relative;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: $userAnimation;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 20px solid #6df6eb;
+      top: -20px;
+      left: 20px;
+    }
+  }
+
+  &__name {
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #272727;
+    font-weight: 700;
+    font-family: "Merriweather";
+    text-align: center;
+    margin-bottom: 23px;
+  }
+
+  &__job {
+    color: #767776;
+    font-family: cursive;
+  }
+
+  &__description {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Raleway";
+    margin-bottom: 40px;
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__contact {
+    &:hover .team__social {
+      opacity: 0.5;
+    }
+  }
+
+  &__social {
+    margin-right: 15px;
+
+    &_facebook {
+      font-size: 13px;
+    }
+    &_twitter {
+      font-size: 10px;
+    }
+    &_dribble {
+      font-size: 12px;
+    }
+    &_mail {
+      font-size: 11px;
+    }
+  }
+}
+
+.contacts {
+  background: linear-gradient(
+      rgba(248, 250, 251, 0.9),
+      rgba(248, 250, 251, 0.8)
+    ),
+    url("./../../img/tree.png");
+  padding: 107px 0 122px;
+
+  &__wrapper {
+    max-width: $maxWidth;
+    margin: $horizontalAlign;
+  }
+
+  &__rows {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__row {
+    filter: drop-shadow(0 0 15px rgba(21, 21, 21, 0.12));
+    background-color: rgba(2, 22, 35, 0.71);
+    font-size: 15px;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Raleway";
+    padding: 45px 32px 38px;
+
+    &:first-of-type {
+      margin-right: 25px;
+      width: 54%;
+      box-sizing: border-box;
+    }
+
+    &:last-of-type {
+      padding: 35px 24px 19px;
+      box-sizing: border-box;
+      width: 44%;
+    }
+  }
+
+  &__field {
+    display: block;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 11px;
+    margin-bottom: 30px;
+    outline: none;
+    width: 100%;
+    color: #fff;
+  }
+
+  &__message {
+    resize: none;
+    display: block;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 75px;
+    margin-bottom: 38px;
+    outline: none;
+    width: 100%;
+  }
+
+  &__button {
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 1;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Montserrat";
+    border: none;
+    border-radius: 2px;
+    background-color: #6eeee4;
+    text-transform: $upperCase;
+    padding: 18px 36px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(110, 238, 228, 0.4);
+    }
+  }
+
+  &__adress {
+    display: block;
+    color: #fff;
+    margin-bottom: 9px;
+    margin-left: 8px;
+
+    &_fax {
+      margin-bottom: 33px;
+    }
+
+    &_mail {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: 224px;
+  }
+}
+
+.footer {
+  background-color: #262b2e;
+  padding: 86px 0 153px;
+
+  &__wrapper {
+    max-width: 210px;
+    margin: $horizontalAlign;
+  }
+
+  &__title {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Raleway";
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__links {
+    display: flex;
+    width: 47px;
+    height: 41px;
+    background-color: rgba(138, 138, 138, 0.4);
+    transition: $userAnimation;
+
+    &:hover {
+      background-color: #71f6eb;
+      transition: $userAnimation;
+
+      & .footer__icon {
+        color: #000000;
+        transition: $userAnimation;
+      }
+    }
+  }
+
+  &__icon {
+    margin: auto;
+    color: #ffffff;
+    font-size: 23px;
+    transition: $userAnimation;
+  }
+}
