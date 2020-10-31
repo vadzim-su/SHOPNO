@@ -80,7 +80,7 @@ const awesomeIconsSecondClass = [
 ];
 const teamPersons = document.querySelector(".team__persons");
 
-fetch("./../../data/team.json")
+fetch("https://vadzim-su.github.io/Shopno/data/team.json")
   .then((data) => data.json())
   .then((data) =>
     data.forEach((person) => {
