@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "AL RAYHAN",
-    "photo": "./assets/img/team_1.png",
+    "photo": "team_1.png",
     "job": "UI Designer",
     "socialLinks": {
       "facebook": "#",
@@ -15,7 +15,7 @@
   {
     "id": 2,
     "name": "AL RAYHAN",
-    "photo": "./assets/img/team_2.png",
+    "photo": "team_2.png",
     "job": "UI Designer",
     "socialLinks": {
       "facebook": "#",
@@ -28,7 +28,7 @@
   {
     "id": 3,
     "name": "AL RAYHAN",
-    "photo": "./assets/img/team_3.png",
+    "photo": "team_3.png",
     "job": "UI Designer",
     "socialLinks": {
       "facebook": "#",
@@ -41,7 +41,7 @@
   {
     "id": 4,
     "name": "AL RAYHAN",
-    "photo": "./assets/img/team_4.png",
+    "photo": "team_4.png",
     "job": "UI Designer",
     "socialLinks": {
       "facebook": "#",
@@ -54,7 +54,7 @@
   {
     "id": 5,
     "name": "AL RAYHAN",
-    "photo": "./assets/img/team_5.png",
+    "photo": "team_5.png",
     "job": "UI Designer",
     "socialLinks": {
       "facebook": "#",
@@ -67,7 +67,7 @@
   {
     "id": 6,
     "name": "AL RAYHAN",
-    "photo": "./assets/img/team_6.png",
+    "photo": "team_6.png",
     "job": "UI Designer",
     "socialLinks": {
       "facebook": "#",
