@@ -68,3 +68,65 @@ function showPrevPicture() {
   }
   singleImage.src = pictures[imageIndex].src;
 }
+
+// Team block
+
+const awesomeIconsFirstClass = ["fab", "fab", "fab", "far"];
+const awesomeIconsSecondClass = [
+  "fa-facebook-f",
+  "fa-twitter",
+  "fa-dribbble",
+  "fa-envelope",
+];
+const teamPersons = document.querySelector(".team__persons");
+
+fetch("./../../team.json")
+  .then((data) => data.json())
+  .then((data) =>
+    data.forEach((person) => {
+      let teamPerson = document.createElement("div");
+      teamPerson.classList.add("team__person");
+      teamPerson.classList.add(`team__person_${person.id}`);
+      teamPerson.style.background = `url('./../../assets/img/team_${person.id}.png')`;
+      teamPerson.style.backgroundRepeat = "no-repeat";
+      teamPerson.style.backgroundSize = "contain";
+      teamPersons.appendChild(teamPerson);
+
+      let teamInfo = document.createElement("div");
+      teamInfo.classList.add("team__info");
+      teamPerson.appendChild(teamInfo);
+
+      let teamName = document.createElement("span");
+      teamName.classList.add("team__name");
+      teamName.textContent = person.name;
+      teamInfo.appendChild(teamName);
+
+      let teamJob = document.createElement("span");
+      teamJob.classList.add("team__job");
+      teamJob.textContent = "/" + person.job;
+      teamInfo.appendChild(teamJob);
+
+      let teamDescription = document.createElement("p");
+      teamDescription.classList.add("team__description");
+      teamDescription.textContent = person.speech;
+      teamInfo.appendChild(teamDescription);
+
+      let teamContacts = document.createElement("div");
+      teamContacts.classList.add("team__contacts");
+      teamInfo.appendChild(teamContacts);
+
+      Object.entries(person.socialLinks).map((link, index) => {
+        let teamContact = document.createElement("a");
+        teamContacts.appendChild(teamContact);
+        teamContact.classList.add("team__contact");
+        teamContact.href = link[1];
+
+        let teamSocial = document.createElement("i");
+        teamSocial.classList.add("team__social");
+        teamSocial.classList.add(`team__social_${link[0]}`);
+        teamSocial.classList.add(awesomeIconsFirstClass[index]);
+        teamSocial.classList.add(awesomeIconsSecondClass[index]);
+        teamContact.appendChild(teamSocial);
+      });
+    })
+  );

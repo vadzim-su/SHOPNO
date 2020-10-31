@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "AL RAYHAN",
+    "photo": "./assets/img/team_1.png",
+    "job": "UI Designer",
+    "socialLinks": {
+      "facebook": "#",
+      "twitter": "#",
+      "dribble": "#",
+      "mail": "#"
+    },
+    "speech": "Lorem Ipsum is not simply is an action designer random text It has roots in a piece."
+  },
+  {
+    "id": 2,
+    "name": "AL RAYHAN",
+    "photo": "./assets/img/team_2.png",
+    "job": "UI Designer",
+    "socialLinks": {
+      "facebook": "#",
+      "twitter": "#",
+      "dribble": "#",
+      "mail": "#"
+    },
+    "speech": "Lorem Ipsum is not simply is an action designer random text It has roots in a piece."
+  },
+  {
+    "id": 3,
+    "name": "AL RAYHAN",
+    "photo": "./assets/img/team_3.png",
+    "job": "UI Designer",
+    "socialLinks": {
+      "facebook": "#",
+      "twitter": "#",
+      "dribble": "#",
+      "mail": "#"
+    },
+    "speech": "Lorem Ipsum is not simply is an action designer random text It has roots in a piece."
+  },
+  {
+    "id": 4,
+    "name": "AL RAYHAN",
+    "photo": "./assets/img/team_4.png",
+    "job": "UI Designer",
+    "socialLinks": {
+      "facebook": "#",
+      "twitter": "#",
+      "dribble": "#",
+      "mail": "#"
+    },
+    "speech": "Lorem Ipsum is not simply is an action designer random text It has roots in a piece."
+  },
+  {
+    "id": 5,
+    "name": "AL RAYHAN",
+    "photo": "./assets/img/team_5.png",
+    "job": "UI Designer",
+    "socialLinks": {
+      "facebook": "#",
+      "twitter": "#",
+      "dribble": "#",
+      "mail": "#"
+    },
+    "speech": "Lorem Ipsum is not simply is an action designer random text It has roots in a piece."
+  },
+  {
+    "id": 6,
+    "name": "AL RAYHAN",
+    "photo": "./assets/img/team_6.png",
+    "job": "UI Designer",
+    "socialLinks": {
+      "facebook": "#",
+      "twitter": "#",
+      "dribble": "#",
+      "mail": "#"
+    },
+    "speech": "Lorem Ipsum is not simply is an action designer random text It has roots in a piece."
+  }
+]

@@ -38,7 +38,7 @@ $upperCase: uppercase;
   }
 
   &__blue {
-    background-color: #76f4ea;
+    background-color: rgba(118, 244, 234, 0.5);
 
     &_first {
       padding: 0 10px;
@@ -63,7 +63,7 @@ $upperCase: uppercase;
   }
 
   &__button {
-    border: 2px solid #000000;
+    border: 2px solid rgba(0, 0, 0, 0.7);
     display: block;
     margin: $horizontalAlign;
     transition: $userAnimation;
@@ -80,7 +80,7 @@ $upperCase: uppercase;
     font-size: 18px;
     letter-spacing: 2px;
     line-height: 28px;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.7);
     font-weight: 400;
     font-family: "Montserrat";
     text-transform: $upperCase;
@@ -114,7 +114,7 @@ $upperCase: uppercase;
     font-size: 38px;
     letter-spacing: 2px;
     line-height: 28px;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.9);
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 11px;
@@ -126,7 +126,7 @@ $upperCase: uppercase;
     font-size: 18px;
     letter-spacing: 1.3px;
     line-height: 28px;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.62);
     font-weight: 400;
     font-family: "Merriweather", serif;
     text-align: center;
@@ -155,7 +155,7 @@ $upperCase: uppercase;
     font-size: 20px;
     letter-spacing: 1.3px;
     line-height: 28px;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.74);
     font-weight: 700;
     font-family: "Merriweather", serif;
     text-transform: $upperCase;
@@ -172,7 +172,7 @@ $upperCase: uppercase;
     font-size: 16px;
     letter-spacing: 0.5px;
     line-height: 28px;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.74);
     font-weight: 400;
     font-family: "Raleway";
     text-align: justify;
@@ -188,7 +188,7 @@ $upperCase: uppercase;
 }
 
 .works {
-  padding: 130px 0 113px;
+  padding: 130px 0 111px;
 
   &__wrapper {
     max-width: $maxWidth;
@@ -199,7 +199,7 @@ $upperCase: uppercase;
     font-size: 38px;
     letter-spacing: 2px;
     line-height: 28px;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.9);
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 10px;
@@ -211,7 +211,7 @@ $upperCase: uppercase;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 28px;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.62);
     font-weight: 400;
     font-family: "Merriweather", serif;
     text-align: center;
@@ -230,7 +230,8 @@ $upperCase: uppercase;
     cursor: pointer;
 
     &:hover {
-      opacity: 0.9;
+      opacity: 0.8;
+      transition: $userAnimation;
     }
   }
 
@@ -266,7 +267,7 @@ $upperCase: uppercase;
     z-index: 5;
     right: 50px;
     top: 50px;
-    font-size: 50px;
+    font-size: 30px;
     cursor: pointer;
     transition: $userAnimation;
 
@@ -281,15 +282,15 @@ $upperCase: uppercase;
   }
 
   &__arrow {
-    font-size: 10em;
+    font-size: 6em;
     color: #fff;
   }
 
   &__buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     position: absolute;
-    width: 80%;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -301,15 +302,17 @@ $upperCase: uppercase;
     margin: 0 auto;
     cursor: pointer;
     opacity: 0.7;
+    transition: $userAnimation;
 
     &:hover {
       opacity: 1;
+      transition: $userAnimation;
     }
   }
 }
 
 .team {
-  padding: 100px 0 190px;
+  padding: 100px 0 176px;
   background-color: #f9fbfb;
 
   &__wrapper {
@@ -321,10 +324,10 @@ $upperCase: uppercase;
     font-size: 38px;
     letter-spacing: 2px;
     line-height: 28px;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.9);
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     text-transform: $upperCase;
     text-align: center;
   }
@@ -333,7 +336,7 @@ $upperCase: uppercase;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 28px;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.62);
     font-weight: 400;
     font-family: "Merriweather", serif;
     text-align: center;
@@ -361,34 +364,15 @@ $upperCase: uppercase;
       opacity: 1;
       transition: $userAnimation;
     }
-
-    &_one {
-      background: url("./../../img/team_1.png");
-    }
-    &_two {
-      background: url("./../../img/team_2.png");
-    }
-    &_three {
-      background: url("./../../img/team_3.png");
-    }
-    &_four {
-      background: url("./../../img/team_4.png");
-    }
-    &_five {
-      background: url("./../../img/team_5.png");
-    }
-    &_six {
-      background: url("./../../img/team_6.png");
-    }
   }
 
   &__info {
     filter: drop-shadow(2.735px 6.444px 8px rgba(20, 20, 21, 0.18));
     background-color: #6df6eb;
     margin: auto 20px;
-    padding: 35px 55px 30px 40px;
+    padding: 42px 54px 42px 39px;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     opacity: 0;
     transition: $userAnimation;
 
@@ -409,27 +393,30 @@ $upperCase: uppercase;
     display: inline-block;
     font-size: 20px;
     letter-spacing: 1px;
-    line-height: 24px;
-    color: #272727;
+    line-height: 1;
+    color: rgba(39, 39, 39, 0.95);
     font-weight: 700;
     font-family: "Merriweather";
     text-align: center;
-    margin-bottom: 23px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
   }
 
   &__job {
     color: #767776;
-    font-family: cursive;
+    font-family: "Merriweather";
+    font-style: italic;
+    margin-left: 9px;
   }
 
   &__description {
     font-size: 16px;
     letter-spacing: 0px;
     line-height: 24px;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.8);
     font-weight: 400;
     font-family: "Raleway";
-    margin-bottom: 40px;
+    margin-bottom: 31px;
   }
 
   &__contacts {
@@ -440,11 +427,13 @@ $upperCase: uppercase;
   &__contact {
     &:hover .team__social {
       opacity: 0.5;
+      transition: $userAnimation;
     }
   }
 
   &__social {
     margin-right: 15px;
+    transition: $userAnimation;
 
     &_facebook {
       font-size: 13px;
@@ -467,7 +456,7 @@ $upperCase: uppercase;
       rgba(248, 250, 251, 0.8)
     ),
     url("./../../img/tree.png");
-  padding: 107px 0 122px;
+  padding: 121px 0 122px;
 
   &__wrapper {
     max-width: $maxWidth;
@@ -484,15 +473,15 @@ $upperCase: uppercase;
     background-color: rgba(2, 22, 35, 0.71);
     font-size: 15px;
     line-height: 1;
-    color: #ffffff;
     font-weight: 400;
     font-family: "Raleway";
-    padding: 45px 32px 38px;
+    padding: 45px 40px 38px 31px;
 
     &:first-of-type {
       margin-right: 25px;
       width: 54%;
       box-sizing: border-box;
+      color: rgba(255, 255, 255, 0.6);
     }
 
     &:last-of-type {
@@ -506,12 +495,21 @@ $upperCase: uppercase;
     display: block;
     background: transparent;
     border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-    padding-bottom: 11px;
-    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    padding-bottom: 13px;
+    padding-left: 6px;
+    margin-bottom: 27px;
     outline: none;
     width: 100%;
     color: #fff;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 30px;
+    }
   }
 
   &__message {
@@ -519,18 +517,23 @@ $upperCase: uppercase;
     display: block;
     background: transparent;
     border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     padding-bottom: 75px;
     margin-bottom: 38px;
     outline: none;
     width: 100%;
+    color: #fff;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
   }
 
   &__button {
     font-size: 18px;
     letter-spacing: 2px;
     line-height: 1;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.7);
     font-weight: 400;
     font-family: "Montserrat";
     border: none;
@@ -539,15 +542,17 @@ $upperCase: uppercase;
     text-transform: $upperCase;
     padding: 18px 36px;
     cursor: pointer;
+    transition: $userAnimation;
 
     &:hover {
-      background-color: rgba(110, 238, 228, 0.4);
+      background-color: rgba(110, 238, 228, 0.7);
+      transition: $userAnimation;
     }
   }
 
   &__adress {
     display: block;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.6);
     margin-bottom: 9px;
     margin-left: 8px;
 
@@ -579,7 +584,7 @@ $upperCase: uppercase;
     font-size: 16px;
     letter-spacing: 0px;
     line-height: 25px;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.8);
     font-weight: 400;
     font-family: "Raleway";
     text-align: center;
@@ -603,7 +608,7 @@ $upperCase: uppercase;
       transition: $userAnimation;
 
       & .footer__icon {
-        color: #000000;
+        color: rgba(0, 0, 0, 0.95);
         transition: $userAnimation;
       }
     }
@@ -614,5 +619,199 @@ $upperCase: uppercase;
     color: #ffffff;
     font-size: 23px;
     transition: $userAnimation;
+  }
+}
+
+@media (max-width: 1139px) {
+  .header {
+    &__wrapper {
+      width: calc(100% - 40px);
+    }
+
+    &__first {
+      display: block;
+      margin-left: 0;
+    }
+    &__second {
+      display: block;
+      margin-right: 0;
+    }
+
+    &__blue_second {
+      margin-right: 0;
+    }
+  }
+
+  .about {
+    padding: 50px 0;
+
+    &__wrapper {
+      width: calc(100% - 40px);
+    }
+
+    &__text {
+      margin-bottom: 50px;
+    }
+
+    &__rows {
+      display: block;
+      padding: 0 10px;
+    }
+
+    &__row {
+      &:first-of-type {
+        margin-bottom: 30px;
+      }
+
+      &:last-of-type {
+        max-width: 100%;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      margin: $horizontalAlign;
+    }
+  }
+
+  .works {
+    padding: 50px 0;
+
+    &__wrapper {
+      width: calc(100% - 40px);
+    }
+
+    &__text {
+      margin-bottom: 50px;
+    }
+
+    &__images {
+      padding: 0 20px;
+    }
+
+    &__image {
+      width: 48%;
+    }
+
+    &__button {
+      margin: 0;
+    }
+  }
+
+  .team {
+    padding: 50px 0;
+
+    &__wrapper {
+      width: calc(100% - 40px);
+    }
+
+    &__text {
+      margin-bottom: 50px;
+    }
+
+    &__persons {
+      padding: 0 50px;
+    }
+
+    &__person {
+      margin: auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  .contacts {
+    padding: 50px 0;
+
+    &__wrapper {
+      width: calc(100% - 40px);
+    }
+
+    &__rows {
+      display: block;
+      padding: 0 10px;
+    }
+
+    &__row:first-of-type,
+    &__row:last-of-type {
+      width: 100%;
+      max-width: 650px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+
+    &__button {
+      padding: 18px 6px;
+    }
+  }
+
+  .footer {
+    padding: 50px 0;
+
+    &__wrapper {
+      width: calc(100% - 40px);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    &__title {
+      font-size: 36px;
+    }
+
+    &__bottom {
+      position: inherit;
+      right: 0;
+    }
+
+    &__glass {
+      display: block;
+      margin: auto;
+    }
+  }
+
+  .works {
+    &__title {
+      line-height: 1;
+    }
+
+    &__image {
+      width: 100%;
+    }
+  }
+
+  .team {
+    &__persons {
+      padding: 0;
+    }
+
+    &__title {
+      line-height: 1;
+    }
+
+    &__info {
+      padding: 20px;
+      margin-bottom: 55px;
+    }
+
+    &__description {
+      margin-bottom: 20px;
+    }
+
+    &__name {
+      margin-bottom: 5px;
+    }
+
+    &__job {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+
+  .contacts {
+    &__adress {
+      margin-left: 0;
+      text-align: center;
+    }
   }
 }
