@@ -463,11 +463,14 @@
       display: block;
       padding: 0 10px; }
     .about__row:first-of-type {
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      display: flex;
+      background: none; }
     .about__row:last-of-type {
       max-width: 100%; }
     .about__img {
-      width: 100%;
+      width: 50%;
+      margin: auto;
       margin: 0 auto; }
   .works {
     padding: 50px 0; }

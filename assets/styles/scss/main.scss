@@ -661,6 +661,8 @@ $upperCase: uppercase;
     &__row {
       &:first-of-type {
         margin-bottom: 30px;
+        display: flex;
+        background: none;
       }
 
       &:last-of-type {
@@ -669,7 +671,8 @@ $upperCase: uppercase;
     }
 
     &__img {
-      width: 100%;
+      width: 50%;
+      margin: auto;
       margin: $horizontalAlign;
     }
   }
