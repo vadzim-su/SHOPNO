@@ -87,7 +87,7 @@ fetch("https://vadzim-su.github.io/Shopno/data/team.json")
       let teamPerson = document.createElement("div");
       teamPerson.classList.add("team__person");
       teamPerson.classList.add(`team__person_${person.id}`);
-      teamPerson.style.background = `url("./../img/${person.photo}")`;
+      teamPerson.style.background = `url("https://vadzim-su.github.io/Shopno/assets/img/${person.photo}")`;
       teamPerson.style.backgroundRepeat = "no-repeat";
       teamPerson.style.backgroundSize = "contain";
       teamPersons.appendChild(teamPerson);
